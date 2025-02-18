@@ -1,0 +1,21 @@
+Feb 17 10:05:15 server1 app[6789]: INFO: User login successful (userID=12543)
+Feb 17 10:10:45 server1 app[6789]: ERROR: Database connection failed
+Feb 17 10:15:30 server1 app[6789]: INFO: Scheduled backup completed successfully
+Feb 17 10:17:20 server1 app[6789]: CRITICAL: Unauthorized API access attempt from 192.168.1.50
+Feb 17 10:18:45 server1 app[6789]: ERROR: Unexpected input received from user ID 78901
+Feb 17 10:20:10 server1 app[6789]: WARNING: High memory usage detected
+Feb 17 10:22:50 server1 app[6789]: INFO: Service restarted successfully
+Feb 17 10:25:33 server1 app[6789]: INFO: Payment processed for Order #30492
+Feb 17 10:30:05 server1 app[6789]: INFO: Email sent to customer@example.com
+Feb 17 10:35:20 server1 app[6789]: ERROR: Attempted access to restricted endpoint /admin/api from 203.0.113.88
+Feb 17 10:40:35 server1 app[6789]: INFO: User logout successful (userID=12543)
+Feb 17 10:45:15 server1 app[6789]: INFO: Scheduled data sync completed successfully
+Feb 17 10:50:00 server1 app[6789]: CRITICAL: Failed payment attempt for Order #30493
+Feb 17 10:52:30 server1 app[6789]: WARNING: IP 203.0.113.99 accessing API too frequently
+Feb 17 10:55:40 server1 app[6789]: INFO: Order #30494 processed successfully
+Feb 17 11:00:10 server1 app[6789]: ERROR: Payment gateway timeout
+Feb 17 11:05:35 server1 app[6789]: CRITICAL: Unauthorized access to admin panel from 203.0.113.100
+Feb 17 11:10:00 server1 app[6789]: INFO: Session timeout for user 12543
+Feb 17 11:12:50 server1 app[6789]: INFO: User login successful (userID=67890)
+Feb 17 11:15:05 server1 app[6789]: ERROR: Unexpected system failure, unable to process payment
+Feb 17 11:20:15 server1 app[6789]: INFO: Data export completed successfully
