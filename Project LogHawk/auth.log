@@ -1,1 +1,22 @@
-
+Feb 17 10:10:05 server1 sshd[2143]: Accepted password for alice from 192.168.1.10 port 55234 ssh2
+Feb 17 10:12:30 server1 sshd[2143]: Accepted password for bob from 192.168.1.20 port 49876 ssh2
+Feb 17 10:15:14 server1 sshd[2143]: Failed password for invalid user admin from 192.168.1.15 port 54321 ssh2
+Feb 17 10:16:41 server1 sshd[2143]: Failed password for root from 203.0.113.42 port 3389 ssh2
+Feb 17 10:18:33 server1 sshd[2143]: Failed password for user2 from 45.67.89.101 port 2200 ssh2
+Feb 17 10:19:10 server1 sshd[2143]: Failed password for user2 from 45.67.89.101 port 2201 ssh2
+Feb 17 10:19:45 server1 sshd[2143]: Failed password for user2 from 45.67.89.101 port 2202 ssh2
+Feb 17 10:21:30 server1 sshd[2143]: Accepted publickey for devops from 192.168.1.30 port 60234 ssh2: RSA SHA256:X1Y2Z3A4B5C6
+Feb 17 10:25:10 server1 sshd[2143]: Failed password for root from 192.168.1.55 port 60000 ssh2
+Feb 17 10:26:32 server1 sshd[2143]: Connection closed by 192.168.1.25 port 50432 [preauth]
+Feb 17 10:30:47 server1 sshd[2143]: Failed password for root from 203.0.113.42 port 3390 ssh2
+Feb 17 10:35:55 server1 sshd[2143]: Failed password for invalid user test from 198.51.100.21 port 40022 ssh2
+Feb 17 10:40:11 server1 sshd[2143]: Accepted password for carol from 192.168.1.40 port 49999 ssh2
+Feb 17 10:45:01 server1 sshd[2143]: Failed password for root from 203.0.113.42 port 3391 ssh2
+Feb 17 10:50:33 server1 sshd[2143]: Failed password for invalid user xyz from 45.67.89.102 port 30010 ssh2
+Feb 17 10:55:22 server1 sshd[2143]: Accepted password for frank from 192.168.1.15 port 59239 ssh2
+Feb 17 11:00:04 server1 sshd[2143]: Failed password for root from 203.0.113.42 port 35000 ssh2
+Feb 17 11:05:15 server1 sshd[2143]: Failed password for user3 from 45.67.89.103 port 29015 ssh2
+Feb 17 11:10:26 server1 sshd[2143]: Accepted password for eve from 192.168.1.50 port 63432 ssh2
+Feb 17 11:15:30 server1 sshd[2143]: Failed password for invalid user admin from 198.51.100.33 port 50321 ssh2
+Feb 17 11:20:05 server1 sshd[2143]: Accepted password for admin from 192.168.1.60 port 48763 ssh2
+Feb 17 11:25:00 server1 sshd[2143]: Failed password for root from 203.0.113.42 port 35001 ssh2
