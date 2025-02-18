@@ -1,0 +1,19 @@
+Feb 17 10:05:05 server1 kernel: [12345.678901] Out of memory: Killed process 9876 (java)
+Feb 17 10:07:30 server1 CRON[4567]: (root) CMD (/usr/bin/python3 /opt/scripts/backup.py)
+Feb 17 10:10:00 server1 kernel: [12346.789012] Firewall: blocked connection from 10.0.0.99 to 192.168.1.1 on port 22
+Feb 17 10:12:15 server1 sudo: user3 : TTY=pts/2 ; PWD=/home/user3 ; USER=root ; COMMAND=/bin/bash
+Feb 17 10:14:45 server1 kernel: [12348.123456] WARNING: Suspicious activity detected on eth0 (IP: 203.0.113.99)
+Feb 17 10:17:30 server1 CRON[5678]: (root) CMD (/usr/bin/python3 /opt/scripts/malware.py)
+Feb 17 10:22:00 server1 kernel: [12349.567890] System reboot scheduled for maintenance
+Feb 17 10:23:35 server1 kernel: [12350.789123] Firewall: blocked connection from 10.0.0.105 to 192.168.1.1 on port 23
+Feb 17 10:25:12 server1 CRON[6789]: (user3) CMD (/usr/bin/python3 /opt/scripts/malicious.py)
+Feb 17 10:27:40 server1 kernel: [12351.123456] WARNING: Potential DDoS detected on interface eth1
+Feb 17 10:30:10 server1 sudo: user2 : TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/bin/sh
+Feb 17 10:35:50 server1 kernel: [12352.567890] Unusual number of connections from 203.0.113.100
+Feb 17 10:37:25 server1 kernel: [12353.789012] Blocking connection from 10.0.0.99 to 192.168.1.1 on port 22
+Feb 17 10:40:01 server1 kernel: [12354.123456] Network interface eth2 experiencing unusual traffic patterns
+Feb 17 10:45:00 server1 CRON[7890]: (root) CMD (/usr/bin/python3 /opt/scripts/cleanup.py)
+Feb 17 10:50:35 server1 kernel: [12355.789012] Firewall: blocked connection from 192.168.1.12 to 192.168.1.1 on port 21
+Feb 17 10:55:12 server1 kernel: [12356.123456] SYSTEM ALERT: High CPU usage detected
+Feb 17 10:57:00 server1 kernel: [12357.567890] Unauthorized access attempt detected on port 3389
+Feb 17 10:59:05 server1 CRON[8901]: (user1) CMD (/usr/bin/python3 /opt/scripts/security_check.py)
