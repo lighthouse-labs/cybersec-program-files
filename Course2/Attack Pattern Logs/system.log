@@ -1,0 +1,35 @@
+[2025-02-18 10:00:00] [INFO] System startup initialized.
+[2025-02-18 10:00:05] [INFO] Hardware check completed successfully.
+[2025-02-18 10:00:10] [INFO] Network adapter initialized.
+[2025-02-18 10:00:15] [INFO] Loading user profile settings.
+[2025-02-18 10:00:20] [INFO] Running scheduled maintenance tasks.
+[2025-02-18 10:00:30] [INFO] System health check completed: No issues detected.
+[2025-02-18 10:00:45] [INFO] Background update service started.
+[2025-02-18 10:01:00] [INFO] Firewall status: Active.
+[2025-02-18 10:01:15] [INFO] Scheduled disk cleanup executed successfully.
+[2025-02-18 10:01:30] [INFO] User 'admin' logged in.
+[2025-02-18 10:01:40] [INFO] Network connection established: 192.168.1.100
+[2025-02-18 10:01:50] [INFO] Email synchronization completed.
+[2025-02-18 10:02:00] [INFO] Backup process started.
+[2025-02-18 10:02:30] [INFO] Backup completed successfully.
+[2025-02-18 10:12:30] [INFO] New file detected: C:\Users\admin\Downloads\ransom.exe
+[2025-02-18 10:12:34] [INFO] System startup initialized.
+[2025-02-18 10:12:35] [INFO] User 'admin' logged in.
+[2025-02-18 10:12:40] [INFO] Network connection established: 192.168.1.100
+[2025-02-18 10:12:45] [INFO] Process 'ransom.exe' started by user 'admin'.
+[2025-02-18 10:12:47] [INFO] Scanning for files in C:\Users\admin\Documents\
+[2025-02-18 10:12:49] [INFO] Encrypting file: C:\Users\admin\Documents\report.docx
+[2025-02-18 10:12:49] [INFO] Encryption successful: C:\Users\admin\Documents\report.docx -> report.docx.ransom
+[2025-02-18 10:12:49] [INFO] Deleting original file: C:\Users\admin\Documents\report.docx
+[2025-02-18 10:12:50] [INFO] Encrypting file: C:\Users\admin\Documents\financials.xlsx
+[2025-02-18 10:12:50] [INFO] Encryption successful: C:\Users\admin\Documents\financials.xlsx -> financials.xlsx.ransom
+[2025-02-18 10:12:50] [INFO] Deleting original file: C:\Users\admin\Documents\financials.xlsx
+[2025-02-18 10:12:52] [INFO] Encrypting file: C:\Users\admin\Desktop\photo.jpg
+[2025-02-18 10:12:52] [INFO] Encryption successful: C:\Users\admin\Desktop\photo.jpg -> photo.jpg.ransom
+[2025-02-18 10:12:52] [INFO] Deleting original file: C:\Users\admin\Desktop\photo.jpg
+[2025-02-18 10:12:55] [INFO] Placing ransom note: C:\Users\admin\Desktop\README_FOR_DECRYPT.txt
+[2025-02-18 10:13:00] [WARNING] High CPU usage detected: ransom.exe (PID: 4532)
+[2025-02-18 10:13:05] [INFO] Network connection lost: 192.168.1.100
+[2025-02-18 10:13:10] [ERROR] Unauthorized access detected on C:\Windows\System32\config\
+[2025-02-18 10:13:15] [ERROR] Security service terminated unexpectedly.
+[2025-02-18 10:13:20] [INFO] System shutdown initiated by 'ransom.exe'
