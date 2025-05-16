@@ -1,6 +1,7 @@
 # DVWA Dependencies
 sudo apt update
-sudo apt install -y apache2 mariadb-server mariadb-client php php-mysqli php-gd libapache2-mod-php
+#sudo apt install -y apache2 mariadb-server mariadb-client php php-mysqli php-gd libapache2-mod-php
+sudo apt install -y apache2 mysql-server-8.0 mysql-client-8.0 php php-mysqli php-gd libapache2-mod-php
 sudo apt install -y git
 
 # DVWA Download and Install
@@ -15,9 +16,17 @@ sudo sed -i 's/allow_url_include = Off/allow_url_include = On/' /etc/php/8.1/apa
 
 # DVWA Database Creation
 sudo mysql -e "create database dvwa"
+
+## Added to allow MySQL8 setup
+sudo mysql -e "SET GLOBAL validate_password.policy=LOW"
+
 sudo mysql -e "create user dvwa@localhost identified by 'p@ssw0rd'"
 sudo mysql -e "grant all on dvwa.* to dvwa@localhost"
 sudo mysql -e "flush privileges"
+
+## Added to allow MySQL8 setup
+sudo mysql -e "SET GLOBAL validate_password.policy=MEDIUM"
+
 sudo apachectl restart
 
 # Changing folder permissions
