@@ -1,19 +1,26 @@
+#!/bin/bash
 # DVWA Dependencies
+echo "Installing Dependencies"
 sudo apt update
 #sudo apt install -y apache2 mariadb-server mariadb-client php php-mysqli php-gd libapache2-mod-php
 sudo apt install -y apache2 mysql-server-8.0 mysql-client-8.0 php php-mysqli php-gd libapache2-mod-php
 sudo apt install -y git
 
 # DVWA Download and Install
-sudo git clone https://github.com/digininja/DVWA.git
-sudo cp ./DVWA/config/config.inc.php.dist ./DVWA/config/config.inc.php
-sudo mkdir -p /var/www/html
-sudo cp -r ./DVWA/* /var/www/html
-sudo service apache2 start
-sudo chown www-data /var/www/html/hackable/uploads
-sudo chown www-data /var/www/html/config
+echo "Pulling DVWA"
+sudo mkdir -p /opt/DVWA
+sudo chown student:student /opt/DVWA
+cd /opt/DVWA
+git clone https://github.com/digininja/DVWA.git .
+cp ./config/config.inc.php.dist ./config/config.inc.php
+echo "Installing DVWA's webroot"
+sudo mkdir -p /var/www/dvwa
+sudo cp -r /opt/DVWA/* /var/www/dvwa/
+sudo chown www-data /var/www/dvwa/hackable/uploads
+sudo chown www-data /var/www/dvwa/config
 sudo sed -i 's/allow_url_include = Off/allow_url_include = On/' /etc/php/8.1/apache2/php.ini
 
+echo "Creating DB"
 # DVWA Database Creation
 sudo mysql -e "create database dvwa"
 
@@ -27,10 +34,21 @@ sudo mysql -e "flush privileges"
 ## Added to allow MySQL8 setup
 sudo mysql -e "SET GLOBAL validate_password.policy=MEDIUM"
 
-sudo apachectl restart
+echo "Adding DVWA to Apache"
+cat << HERE >dvwa.conf
+<VirtualHost *:80>
+ServerName dvwa.localhost
+ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/dvwa
+ErrorLog \${APACHE_LOG_DIR}/error.log
+        CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+HERE
+echo "127.0.0.1            dvwa.localhost"|sudo tee -a /etc/hosts
+sudo cp dvwa.conf /etc/apache2/sites-available/
+sudo a2ensite dvwa
+sudo systemctl restart apache2
 
 # Changing folder permissions
-sudo chown -R www-data:www-data /var/www
-
-# Note
-# You must change the default Document Root directive in this file: ```/etc/apache2/sites-available/000-default.conf``` and change it to ```/var/www/html```.
+sudo chown -R www-data:www-data /var/www/dvwa
+echo "DONE!"
