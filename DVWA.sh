@@ -44,9 +44,9 @@ ErrorLog \${APACHE_LOG_DIR}/error.log
         CustomLog \${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 HERE
-IntOut=`ip route | grep default | awk '{print $5}'`
-IPOut=`ip addr show $IntOut | grep -oP '(?<=inet\s)(\d+\.\d+\.\d+\.\d+)'`
-echo "$IPOut            dvwa.localhost"|sudo tee -a /etc/hosts
+#IntOut=`ip route | grep default | awk '{print $5}'`
+#IPOut=`ip addr show $IntOut | grep -oP '(?<=inet\s)(\d+\.\d+\.\d+\.\d+)'`
+echo "127.0.0.1            dvwa.localhost"|sudo tee -a /etc/hosts
 sudo cp dvwa.conf /etc/apache2/sites-available/
 sudo a2ensite dvwa
 sudo systemctl restart apache2
